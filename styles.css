@@ -1,0 +1,47 @@
+body{
+
+}
+
+h1{
+    /* width: 100vw; */
+    /* border: 1px solid red; */
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    border-bottom: 5px solid red;
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.quickList{
+    grid-column: 1;
+    height: 90vh;
+    border-right: 5px solid red;
+    padding-left: 10px;
+}
+
+.mainContainer{
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    grid-column: 2;
+}
+
+img{
+    float: left;
+    margin-top: 45px;
+    margin-right: 10px;
+}
+h2{
+    display: inline;
+    text-align: center;
+}
+
+.main-container > p{
+    text-align: justify;
+}
