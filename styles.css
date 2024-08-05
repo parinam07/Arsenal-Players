@@ -1,9 +1,6 @@
-html{
-
-}
-
 body{
-    /* background-color: #000; */
+    margin-top: 0;
+    padding-top: 0;
     background-color: #CCDDD3;
     font-family: Tahoma, Verdana, Arial;
 }
@@ -15,27 +12,33 @@ header{
 
 .heading{
     margin-top: 0;
-    padding-top: 0;
-    border-bottom: 1px solid red;
-    background-color: red;
-    color: white;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 72px;
+    border-bottom: 1px solid black;
+    background-color: #e7e7e7;
+    height: 40px;
+    color: black;
 }
 
 h2{
-    
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
-    color: #36413E;
+    /* color: #36413E; */
+    color: black;
 }
 
 .quickList{
     grid-column: 1;
     height: 88vh;
-    border-right: 1px solid red;
+    border-right: 1px solid black;
     /* padding-left: 0; */
     /* margin-left: 0; */
 }
@@ -80,7 +83,8 @@ table{
     margin-left: auto;
     margin-right: auto;
     /* padding: 5px; */
-    width: 528px;
+    max-width: 528px;
+    width: 60%;
     height: auto;
     line-height: 2px;
     font-size: 16px;
@@ -118,4 +122,11 @@ h1{
 
 .main-container > p{
     /* text-align: justify; */
+}
+
+button{
+    color: inherit;
+    font-weight: bold;
+    /* background-color: #e7e7e7; */
+    /* border: #e7e7e7; */
 }

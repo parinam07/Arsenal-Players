@@ -105,11 +105,43 @@ pList.forEach((item, index) =>{
     });
 
 const cardBtn = document.getElementsByClassName('btns');
+const forPlayerObj = document.getElementById('forPlayer');
 const tnameObj  = document.getElementById('tname');
 
 [...cardBtn].forEach((btn)=>{
     btn.addEventListener("click", (event)=>{
-        console.log(event.target.id);
+        // event.target.style.backgroundColor = "blue";
+        forPlayerObj.innerText = pList[event.target.id]['name'];
         tnameObj.innerText = pList[event.target.id]['name'];
     });
 })
+
+
+
+
+// const url = "https://en.wikipedia.org/wiki/Arsenal_F.C."
+
+const url = "https://en.wikipedia.org/w/api.php?action=parse&format=json&origin=*&page=Arsenal%5FF.C."
+
+fetch(url)
+  .then(function(response) {
+    const response1 = response.json();
+    return response1;
+  })
+  .then(function(response){
+    // html_code = response["parse"]["text"]["*"];
+    // parser = new DOMParser();
+    // html = parser.parseFromString(html_code, "text/html");
+    // var tables = html.querySelectorAll(".wikitable");
+    console.log(response);
+  })
+// async function getData() {
+// const requestURL = 'https://en.wikipedia.org/wiki/Arsenal_F.C.';
+// const request = new Request(requestURL);
+// const response = await fetch(request);
+// const receivedData = await response.json();
+
+// console.log(receivedData);
+// }
+
+// getData();
