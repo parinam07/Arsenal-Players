@@ -1,1 +1,2 @@
-This is a side by side project for Fifa card of Premier League players.
+This is a project for generating Arsenal Players Info.
+The data is fetched from Wikipedia.
